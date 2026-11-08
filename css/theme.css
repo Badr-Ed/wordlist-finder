@@ -1,0 +1,6 @@
+/* Theme: colors, light and dark modes. Edit here to restyle the whole site. */
+:root{--bg:#0f0b1e;--panel:#1a1433;--panel2:#231b45;--line:#3a2f69;--text:#ece8ff;--muted:#a198cc;--mag:#ff4d9d;--cyan:#4de1ff;--amber:#ffc857;--glow:.55;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f3ff;--panel:#ffffff;--panel2:#efeaff;--line:#d3c9f5;--text:#1b1535;--muted:#5d5490;--glow:.25;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f6f3ff;--panel:#ffffff;--panel2:#efeaff;--line:#d3c9f5;--text:#1b1535;--muted:#5d5490;--glow:.25;color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark}

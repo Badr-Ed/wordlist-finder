@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wordlist Finder for Kali and SecLists</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="aurora" aria-hidden="true"><i></i><i></i></div>
+<main>
+  <h1>Which wordlist do you need?</h1>
+  <p class="lead">Pick what you’re trying to do. The list below narrows to the files that fit, smallest first, with a command you can copy.</p>
+
+  <section class="panel" aria-label="Filters">
+    <div class="group"><h2>What do you want to do?</h2><div class="chips" id="g"></div></div>
+    <div class="group"><h2>How deep should it go?</h2><div class="chips" id="z"></div></div>
+    <div class="group"><h2>Where does it come from?</h2><div class="chips" id="s"></div></div>
+    <div class="bar">
+      <input class="search" id="q" type="search" placeholder="Search names, paths or uses" aria-label="Search wordlists">
+      <button class="reset" id="reset" type="button">Clear filters</button>
+    </div>
+  </section>
+
+  <h2 class="count" id="count" aria-live="polite"></h2>
+  <div class="grid" id="grid"></div>
+
+  <p class="note">Use these lists only on systems you own or have written permission to test. Paths match a typical Kali install with <code style="display:inline;padding:1px 6px">seclists</code> installed, so run <code style="display:inline;padding:1px 6px">ls</code> on your machine to confirm.</p>
+  <p class="disc"><strong>Disclaimer.</strong> This page was created with the help of Claude, an AI assistant made by Anthropic. It is for educational purposes only. The author is not responsible for any illegal activity or misuse linked to it.</p>
+</main>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
