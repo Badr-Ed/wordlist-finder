@@ -1,16 +1,19 @@
 # Kali Linux and SecLists Wordlist Guide
- 
+
+## Disclaimer
+> This guide was created with the help of Claude, an AI assistant made by Anthropic. It is for educational purposes only. The author is not responsible for any illegal activity or misuse linked to it. Use these lists only on systems you own or have written permission to test.
+
 A file by file map of the wordlists that ship with Kali Linux and the SecLists collection, with a one line use case for each.
- 
+**Live site:** [badr-ed.github.io/wordlist-finder](https://badr-ed.github.io/wordlist-finder/)
+
 **Accuracy notes**
  
 - Sections 7, 8 and 9 (`Payloads/`, `Web-Shells/`, `Passwords/Cracked-Hashes/`) were checked against the SecLists GitHub repository (commit `dbe00ff`, November 2026).
 - The other sections are written from general knowledge of typical Kali installs. File names and versions drift, so confirm locally with `tree /usr/share/wordlists` and `tree -L 3 /usr/share/seclists`.
 - SecLists is installed with `sudo apt install seclists`. Kali links it at `/usr/share/wordlists/seclists`.
 - Use these lists only against systems you own or have written permission to test.
-## Disclaimer
- 
-> This guide was created with the help of Claude, an AI assistant made by Anthropic. It is for educational purposes only. The author is not responsible for any illegal activity or misuse linked to it. Use these lists only on systems you own or have written permission to test.
+
+
  
 ## Contents
  
